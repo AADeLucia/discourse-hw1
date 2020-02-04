@@ -27,7 +27,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Welcome to Mimic, where I repeat back to you exactly what you said, so you know how stupid you sound."
+        speak_output = "Welcome to Mimic, where I repeat back to you exactly what you said, so you know how stupid you sound. I also say hello."
 
         return (
             handler_input.response_builder
@@ -100,8 +100,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = f"you said, {handler_input.request_envelope.request.intent.slots['raw_input'].value.split(' ')[0]}-- " +
-        f"Just kidding, goodbye."
+        speak_output = f"you said, stop copying me. Just kidding, goodbye."
         
         return (
             handler_input.response_builder
