@@ -14,7 +14,7 @@ And for fun we made it sassy.
 The user is prefixed with ``>>`` and Alexa's resonse is below.
 ```
 >> Open mimic skill
-Welcome to Mimic, where I repeat back to you exactly what you said, so you know how stupid you sound.
+Welcome to Mimic, where I repeat back to you exactly what you said, so you know how stupid you sound. I also say hello.
 >> mimic I'm Aaron
 you said I'm Aaron
 >> hello
